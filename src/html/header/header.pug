@@ -1,0 +1,25 @@
+header 
+    .header 
+        a.logo(href="#")
+            img(src="/src/img/logo.svg", alt="logo") 
+        nav.nav 
+            ul.nav-list 
+                li.nav-item
+                    a(href="").nav-link.nav-linc__about О нас
+                li.nav-item
+                    a(href="").nav-link Услуги
+                        img(src="/src/img/expand_more.svg", alt="expand_more")
+                li.nav-item
+                    a(href="").nav-link Вакансии
+                li.nav-item
+                    a(href="").nav-link Новости
+                li.nav-item
+                    a(href="").nav-link Соглашения
+                        img(src="/src/img/expand_more.svg", alt="expand_more")
+                .login 
+                    - const islogin = false;
+                    if islogin
+                        a(href="").login-user Юлий цезарь
+                    else
+                        button.login-btn.btn.btn-clear войти
+                        button.login-btn.btn зарегистрироваться
