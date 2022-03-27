@@ -1,6 +1,3 @@
-/* Normalize */
-@import "_normalize";
-
 @import "fonts/fonts";
 
 * {
@@ -34,3 +31,12 @@ img {
 
 // Block Header
 @import "header/header";
+
+// Block Content
+.block-content {
+    height: 1022px;
+    background-image: url(/src/img/image-content-1.png);
+}
+
+// Block Footer
+@import "footer/footer";

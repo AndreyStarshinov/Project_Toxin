@@ -1,5 +1,3 @@
-/* Normalize */
-@import url(e:\Project_Toxin\src\scss\_normalize.css);
 /* montserrat-regular - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
@@ -123,7 +121,8 @@ img {
 }
 
 .nav-link {
-  color: #1F2041 50%;
+  color: #1F2041;
+  opacity: .5;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
@@ -131,6 +130,7 @@ img {
 
 .nav-linc__about {
   font-weight: 700;
+  opacity: 1;
 }
 
 .login-btn:not(:last-child) {
@@ -144,5 +144,200 @@ img {
   font-weight: 400;
   line-height: 17px;
   border-left: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.block-content {
+  height: 1022px;
+  background-image: url(/src/img/image-content-1.png);
+}
+
+/* Footer */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  padding: 104px 140px 100px 140px;
+}
+
+.footer-left {
+  width: 260px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-left__text {
+  margin-top: 20px;
+}
+
+.footer__item-bold {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  margin-bottom: 21px;
+}
+
+.footer-item {
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: #1F2041;
+  opacity: .5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.footer-subscription {
+  width: 260px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-subscription__item-text {
+  margin-bottom: 20px;
+}
+
+.footer-subscription__input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1F2041;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.footer-subscription__input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: .25;
+}
+
+.footer-subscription__input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: .25;
+}
+
+.footer-subscription__input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: .25;
+}
+
+.footer-subscription__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: .25;
+}
+
+.footer-subscription__input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.footer-subscription__item-input {
+  position: relative;
+}
+
+.footer-subscription__input-icon {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0.875rem;
+  width: 1rem;
+  cursor: pointer;
+}
+
+.footer-subscription__item-text, .footer-left__text {
+  color: #1F2041;
+  opacity: .75;
+}
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  padding: 23px 140px 23px 140px;
+  border-top: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.footer-social__text {
+  margin: 0;
+  color: #1F2041;
+  opacity: .75;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.footer-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-social__icon {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center center;
+}
+
+.footer-social__icon-twitter {
+  width: 24px;
+  height: 24px;
+  background-image: url(/src/img/icon-twitter.svg);
+}
+
+.footer-social__icon-facebook {
+  width: 24px;
+  height: 24px;
+  background-image: url(/src/img/icon-facebook.svg);
+}
+
+.footer-social__icon-instagram {
+  width: 24px;
+  height: 24px;
+  background-image: url(/src/img/icon-instagram.svg);
 }
 /*# sourceMappingURL=style.css.map */
