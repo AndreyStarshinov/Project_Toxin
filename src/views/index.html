@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../scss/_normalize.css">
     <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../scss/lightpick.css">
   </head>
   <body> 
     <header> 
@@ -27,6 +28,27 @@
       </div>
     </header>
     <div class="block-content">
+      <div class="form-search"> 
+        <form class="form-container" action="">
+          <h2 class="form-search__text">Найдём номера под ваши пожелания</h2>
+          <div class="datepicker"> 
+            <div class="datepicker-start">
+              <label for="">Прибытие</label>
+              <input type="text" id="datepicker_1" placeholder="ДД.ММ.ГГГГ" autocomplete="off">
+            </div>
+            <div class="datepicker-end">
+              <label for="">Выезд</label>
+              <input type="text" id="datepicker_2" placeholder="ДД.ММ.ГГГГ" autocomplete="off">
+            </div>
+          </div>
+          <div class="form-search__guests">
+            <label class="form-search__guests-label" for="guests">гости</label>
+            <select name="guests" id="guests"> </select>
+          </div>
+          <button class="form-search__btn btn" type="submit">Подобрать номер</button>
+          <div class="out"></div>
+        </form>
+      </div>
       <p class="block-content__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
     </div>
     <footer> 
@@ -87,5 +109,8 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="../js/lightpick/lightpick.js"></script>
+    <script src="../js/datepicker/datepicker.js"> </script>
   </body>
 </html>

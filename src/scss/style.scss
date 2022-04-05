@@ -34,9 +34,18 @@ img {
 
 // Block Content
 .block-content {
-    height: 1022px;
+    padding: 70px 140px 18px 140px;
+    height: 830px;
     background-image: url(/src/img/image-content-1.png);
+    & .block-content__text {
+        position: relative;
+        margin-left: auto;
+        width: 297px;
+        top: 40%;
+    }
 }
+@import "form_search/form_search";
+@import "datepicker/datepicker";
 
 // Block Footer
 @import "footer/footer";

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "lightpick": "^1.6.2",
     "pug": "^3.0.2"
   },
   "devDependencies": {

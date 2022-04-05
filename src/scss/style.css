@@ -147,8 +147,74 @@ img {
 }
 
 .block-content {
-  height: 1022px;
+  padding: 70px 140px 18px 140px;
+  height: 830px;
   background-image: url(/src/img/image-content-1.png);
+}
+
+.block-content .block-content__text {
+  position: relative;
+  margin-left: auto;
+  width: 297px;
+  top: 40%;
+}
+
+.form-search {
+  width: 380px;
+  height: 374px;
+  padding: 40px 30px 30px 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.form-search__guests-label {
+  display: block;
+}
+
+.datepicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.datepicker input {
+  width: 150px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.datepicker input::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.datepicker input:-ms-input-placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.datepicker input::-ms-input-placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.datepicker input::placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 /* Footer */

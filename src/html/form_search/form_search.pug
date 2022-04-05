@@ -1,0 +1,9 @@
+.form-search 
+    form(action="").form-container
+        h2.form-search__text Найдём номера под ваши пожелания
+        include ../datepicker/datepicker
+        .form-search__guests
+            label(for="guests").form-search__guests-label гости
+            select(name="guests" id="guests") 
+        button(type="submit").form-search__btn.btn Подобрать номер
+        .out
