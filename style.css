@@ -1,0 +1,51 @@
+div {
+    margin-bottom: 1%;
+}
+input {
+    width: 100px;
+    height: 50px;
+}
+button {
+    padding: 20px 50px;
+}
+
+.checkbox__container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.checkbox__container input {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+.checkbox__container p {
+    margin-right: 70px;
+}
+.checkbox {
+    display: none;
+    z-index: 99;
+}
+
+.color {
+    background-color: red;
+}
+
+.btn2 {
+    display: none;
+}
+
+#image {
+    width: 500px;
+    height: 600px;
+}
+
+.image1 {
+    background-image: url(/src/img/image-content-1.png);
+}
+.image2 {
+    background-image: url(/src/img/image-content-2.png);
+}
+.image3 {
+    background-image: url(/src/img/image-content-3.png);
+}

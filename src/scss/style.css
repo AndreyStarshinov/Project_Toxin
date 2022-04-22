@@ -56,6 +56,7 @@ img {
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
+  z-index: 34;
 }
 
 .btn-clear {
@@ -64,7 +65,7 @@ img {
   color: #BC9CFF;
   background: #fff;
   background-clip: padding-box;
-  border: solid 2px transparent;
+  border: solid 2px;
   border-radius: 22px;
 }
 
@@ -78,8 +79,6 @@ img {
   z-index: -1;
   margin: -2px;
   border-radius: inherit;
-  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
 /* Header */
@@ -170,10 +169,33 @@ img {
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  z-index: 36;
 }
 
-.form-search__guests-label {
+.form-search .form-search__guests {
+  margin-top: 20px;
+}
+
+.form-search .form-search__guests-label {
   display: block;
+}
+
+.form-search .form-search__btn {
+  margin-top: 31px;
+  width: 100%;
+  height: 44px;
+}
+
+.form-search .form-search__text {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.form-search > label {
+  font-weight: 700;
+  font-size: 12px;
+  color: #1F2041;
+  text-transform: uppercase;
 }
 
 .datepicker {
@@ -215,6 +237,152 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+.dropdown__input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1F2041;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.dropdown__input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.dropdown__guests {
+  position: relative;
+}
+
+.dropdown__guests .dropdown__input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1F2041;
+  opacity: 0.75;
+}
+
+.dropdown__guests .dropdown__input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1F2041;
+  opacity: 0.75;
+}
+
+.dropdown__guests .dropdown__input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1F2041;
+  opacity: 0.75;
+}
+
+.dropdown__guests .dropdown__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1F2041;
+  opacity: 0.75;
+}
+
+.dropdown__input-arrow {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0.875rem;
+  width: 1rem;
+  cursor: pointer;
+}
+
+.dropdown__modal {
+  position: absolute;
+  display: none;
+  width: 318px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1F2041;
+  background-color: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  z-index: 38;
+}
+
+.dropdown__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.dropdown__item {
+  margin-top: 19px;
+  margin-bottom: 0;
+}
+
+.dropdown__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dropdown__amount .dropdown__amount-minus, .dropdown__amount .dropdown__amount-plus {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  color: #1F2041;
+  opacity: 0.75;
+  border: 1px solid rgba(31, 32, 65, 0.3);
+  border-radius: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropdown__amount .dropdown__amount-minus-disabled {
+  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.1);
+  pointer-events: none;
+}
+
+.dropdown__amount .dropdown__amount-number {
+  color: #1F2041;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.dropdown__clear, .dropdown__apply {
+  padding: 0;
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: #BC9CFF;
+  background-color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* Footer */
