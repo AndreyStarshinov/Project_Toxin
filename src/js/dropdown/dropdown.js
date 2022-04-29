@@ -44,7 +44,5 @@ let funcGuests = function() {
     
 };
 
-
-
 $('.dropdown__amount-minus').on('click', funcMinus);
 $('.dropdown__amount-plus').on('click', funcPlus);

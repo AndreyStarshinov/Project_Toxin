@@ -28,6 +28,8 @@ img {
 
 @import "button/btn";
 @import "button/btn_clear";
+@import "button/btn_long";
+@import "text_field/text_field";
 
 // Block Header
 @import "header/header";
@@ -37,6 +39,9 @@ img {
     padding: 70px 140px 18px 140px;
     height: 830px;
     background-image: url(/src/img/image-content-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     & .block-content__text {
         position: relative;
         margin-left: auto;
@@ -44,9 +49,11 @@ img {
         top: 40%;
     }
 }
+
 @import "form_search/form_search";
 @import "datepicker/datepicker";
 @import "dropdown/dropdown";
+@import "sign-in/sign-in";
 
 // Block Footer
 @import "footer/footer";

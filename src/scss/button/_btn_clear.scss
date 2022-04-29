@@ -1,11 +1,10 @@
 .btn-clear {
     position: relative;
-    padding: 8px 18px;
-    $border: 2px;
+    padding: 14px 20px;
     color: #BC9CFF;
     background: #fff;
     background-clip: padding-box;
-    border: solid $border;
+    border: solid 2px;
     border-radius: 22px;
 
     &:before {
@@ -13,7 +12,7 @@
         position: absolute;
         top: 0; right: 0; bottom: 0; left: 0;
         z-index: -1;
-        margin: -$border;
+        margin: -2px;
         border-radius: inherit;
     }
 }

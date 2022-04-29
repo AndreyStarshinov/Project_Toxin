@@ -1,6 +1,6 @@
 header 
     .header 
-        a.logo(href="#")
+        a.logo(href="/src/views/index.html")
             img(src="/src/img/logo.svg", alt="logo") 
         nav.nav 
             ul.nav-list 
@@ -21,5 +21,5 @@ header
                     if islogin
                         a(href="").login-user Юлий цезарь
                     else
-                        a(href="").login-btn.btn.btn-clear войти
-                        a(href="").login-btn.btn зарегистрироваться
+                        a(href="/src/views/sign-in.html").login-btn.btn.btn-clear войти
+                        a(href="/src/views/reg.html").login-btn.btn зарегистрироваться
