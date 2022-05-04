@@ -2,8 +2,8 @@ section.signin
     .signin__container
         form(action="", method="get").signin__form
             h1.signin__form-heading Войти
-            input(type="text" placeholder="Email").signgin__form-input.text_field
-            input(type="text" placeholder="Пароль").signin__form-input.text_field
+            input(type="text" placeholder="Email").signin__form-input.text-field
+            input(type="text" placeholder="Пароль").signin__form-input.text-field
             .signin__btn.form__btn-long
                 button.btn-long Войти
                 span.btn-icon
@@ -12,4 +12,4 @@ section.signin
                     </svg>
             .signin__form-createakk 
                 p.signin__form-createakk-text Нет аккаунта на Toxin?
-                a.signin__form-createakk-btn.btn.btn-clear Создать
+                a(href="/src/views/reg.html").signin__form-createakk-btn.btn.btn-clear Создать

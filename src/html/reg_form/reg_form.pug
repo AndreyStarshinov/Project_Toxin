@@ -1,15 +1,30 @@
-section.signin 
-    .signin__container
-        form(action="", method="get").signin__form
-            h1.signin__form-heading Зарегистрироваться
-            input(type="text" placeholder="Email").signgin__form-input.text_field
-            input(type="text" placeholder="Пароль").signin__form-input.text_field
-            .signin__btn.form__btn-long
+section.reg 
+    .reg__container
+        form(action="", method="get").reg-form
+            h1.reg-form__heading Регистрация аккаунта
+            input(type="text" placeholder="Имя").reg-form__input.text-field
+            input(type="text" placeholder="Фамилия").reg-form__input.text-field
+            .reg-form__gender
+                input(type="radio", id="male", name="gender", value="male").reg-form__radio
+                label(for="male").reg-form__radio_text Мужчина
+                input(type="radio", id="female", name="gender", value="female").reg-form__radio
+                label(for="female").reg-form__radio_text Женщина
+            h2.reg-form__text Дата рождения
+            .datepicker
+                .datepicker-start
+                    input(type="text" id="datepicker_3" placeholder="ДД.ММ.ГГГГ" autocomplete="off")
+            h2.reg-form__text Данные для входа в сервис
+            input(type="text" placeholder="Email").reg-form__input.text-field
+            input(type="text" placeholder="Пароль").reg-form__input.text-field
+            .reg-form__checkbox
+                input(type="checkbox").reg-form__toggle
+                label.reg-form__toggle_text Получать спецпредложения
+            .reg-btn.form__btn-long
                 button.btn-long Перейти к оплате
                 span.btn-icon
                     <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 0.541992L17.0156 8.55762L9 16.5732L7.59375 15.167L13.1719 9.54199H0.984375V7.57324H13.1719L7.59375 1.94824L9 0.541992Z" fill="white"/>
                     </svg>
-            .signin__form-createakk 
-                p.signin__form-createakk-text Уже есть аккаунт на Toxin?
-                a.signin__form-createakk-btn.btn.btn-clear Создать
+            .reg-form__createakk 
+                p.reg-form__createakk_text Уже есть аккаунт на Toxin?
+                a(href="/src/views/sign-in.html").reg-form__createakk_btn.btn.btn-clear Войти

@@ -35,25 +35,13 @@ img {
 @import "header/header";
 
 // Block Content
-.block-content {
-    padding: 70px 140px 18px 140px;
-    height: 830px;
-    background-image: url(/src/img/image-content-1.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    & .block-content__text {
-        position: relative;
-        margin-left: auto;
-        width: 297px;
-        top: 40%;
-    }
-}
+@import "block_content/block_content";
 
 @import "form_search/form_search";
 @import "datepicker/datepicker";
 @import "dropdown/dropdown";
 @import "sign-in/sign-in";
+@import "reg/reg";
 
 // Block Footer
 @import "footer/footer";

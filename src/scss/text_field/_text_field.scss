@@ -1,4 +1,4 @@
-.text_field {
+.text-field {
     display: block;
     width: 100%;
     padding: 10px 15px;
@@ -10,7 +10,7 @@
     border-radius: 4px;
   }
 
-.text_field::placeholder {
+.text-field::placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -18,13 +18,13 @@
     opacity: .25;
   }
 
-.text_field:focus {
+.text-field:focus {
     outline: 0;
     box-shadow: 0 0 0 0.1rem rgba(158, 158, 158, 0.25);
     border: 1px solid rgba(31, 32, 65, 0.5);
   }
 
-.text_field:hover {
+.text-field:hover {
     outline: 0;
     box-shadow: 0 0 0 0.1rem rgba(158, 158, 158, 0.25);
     border: 1px solid rgba(31, 32, 65, 0.5);

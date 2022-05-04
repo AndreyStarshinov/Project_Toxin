@@ -1,4 +1,4 @@
-var picker = new Lightpick({
+var picker_1 = new Lightpick({
     field: document.getElementById('datepicker_1'),
     secondField: document.getElementById('datepicker_2'),
     singleDate: false,
@@ -7,6 +7,5 @@ var picker = new Lightpick({
         var str = '';
         str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
         str += end ? end.format('Do MMMM YYYY') : '...';
-        document.getElementById('result-3').innerHTML = str;
     }
 });

@@ -1,17 +1,36 @@
 
-<section class="signin"> 
-  <div class="signin__container">
-    <form class="signin__form" action="" method="get">
-      <h1 class="signin__form-heading">Зарегистрироваться</h1>
-      <input class="signgin__form-input text_field" type="text" placeholder="Email"/>
-      <input class="signin__form-input text_field" type="text" placeholder="Пароль"/>
-      <div class="signin__btn form__btn-long">
+<section class="reg"> 
+  <div class="reg__container">
+    <form class="reg-form" action="" method="get">
+      <h1 class="reg-form__heading">Регистрация аккаунта</h1>
+      <input class="reg-form__input text-field" type="text" placeholder="Имя"/>
+      <input class="reg-form__input text-field" type="text" placeholder="Фамилия"/>
+      <div class="reg-form__gender">
+        <input class="reg-form__radio" type="radio" id="male" name="gender" value="male"/>
+        <label class="reg-form__radio_text" for="male">Мужчина</label>
+        <input class="reg-form__radio" type="radio" id="female" name="gender" value="female"/>
+        <label class="reg-form__radio_text" for="female">Женщина</label>
+      </div>
+      <h2 class="reg-form__text">Дата рождения</h2>
+      <div class="datepicker">
+        <div class="datepicker-start">
+          <input type="text" id="datepicker_3" placeholder="ДД.ММ.ГГГГ" autocomplete="off"/>
+        </div>
+      </div>
+      <h2 class="reg-form__text">Данные для входа в сервис</h2>
+      <input class="reg-form__input text-field" type="text" placeholder="Email"/>
+      <input class="reg-form__input text-field" type="text" placeholder="Пароль"/>
+      <div class="reg-form__checkbox">
+        <input class="reg-form__toggle" type="checkbox"/>
+        <label class="reg-form__toggle_text">Получать спецпредложения</label>
+      </div>
+      <div class="reg-btn form__btn-long">
         <button class="btn-long">Перейти к оплате</button><span class="btn-icon"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 0.541992L17.0156 8.55762L9 16.5732L7.59375 15.167L13.1719 9.54199H0.984375V7.57324H13.1719L7.59375 1.94824L9 0.541992Z" fill="white"/>
 </svg></span>
       </div>
-      <div class="signin__form-createakk"> 
-        <p class="signin__form-createakk-text">Уже есть аккаунт на Toxin?</p><a class="signin__form-createakk-btn btn btn-clear">Создать</a>
+      <div class="reg-form__createakk"> 
+        <p class="reg-form__createakk_text">Уже есть аккаунт на Toxin?</p><a class="reg-form__createakk_btn btn btn-clear" href="/src/views/sign-in.html">Войти</a>
       </div>
     </form>
   </div>
