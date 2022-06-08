@@ -1,4 +1,5 @@
-.dropdown__input {
+.dropdown-1__input,
+.dropdown-2__input {
   display: block;
   width: 100%;
   padding: 10px 15px;
@@ -10,12 +11,14 @@
   border-radius: 4px;
 }
 
-.dropdown__input:focus {
+.dropdown-1__input:focus,
+.dropdown-2__input:focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
 
-.dropdown__guests {
+.dropdown-1__guests,
+.dropdown-2__guests {
   position: relative;
   & .dropdown__input::placeholder {
     font-size: 14px;
@@ -36,7 +39,8 @@
   cursor: pointer;
 }
 
-.dropdown__modal{
+.dropdown-1__modal,
+.dropdown-2__modal {
   position: absolute;
   display: none;
   width: 318px;
@@ -67,7 +71,10 @@
   display: flex;
   width: 92px;
   justify-content: space-between;
-  & .dropdown__amount-minus, .dropdown__amount-plus {
+  & .dropdown-1__amount-minus,
+    .dropdown-2__amount-minus,
+    .dropdown-1__amount-plus,
+    .dropdown-2__amount-plus {
     width: 28px;
     height: 28px;
     background-color: #fff;
@@ -84,7 +91,8 @@
     border: 1px solid rgba(31, 32, 65, .1);
     pointer-events: none;
   }
-  & .dropdown__amount-number {
+  & .dropdown-1__amount-number,
+    .dropdown-2__amount-number {
     color: #1F2041;
     font-weight: 700;
     font-size: 12px;

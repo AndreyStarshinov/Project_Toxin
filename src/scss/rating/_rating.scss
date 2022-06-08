@@ -1,0 +1,16 @@
+.stars {
+    display: flex;
+}
+
+.star {
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+    background: url(/src/img/star_border.svg) no-repeat;
+    cursor: pointer;
+}
+
+.star-full,
+.star-full-last {
+    background: url(/src/img/star.svg) no-repeat;
+}

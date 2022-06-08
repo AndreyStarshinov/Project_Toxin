@@ -1,0 +1,54 @@
+.checkbox-list {
+    margin-top: 30px;
+}
+
+.checkbox-list__dropdown {
+    position: relative;
+}
+
+.checkbox-list-heading {
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.checkbox-list-heading::placeholder {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.checkbox-list-heading:focus {
+    outline: 0;
+}
+
+.checkbox-list-arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0.875rem;
+    width: 1rem;
+    cursor: pointer;
+  }
+
+  .checkbox-list__dropdown-modal {
+    position: absolute;
+    display: none;
+    width: 318px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1F2041;
+    background-color: #fff;
+    z-index: 38;
+  }
+
+  .checkbox-list__item {
+      display: flex;
+      margin-top: 10px;
+  }

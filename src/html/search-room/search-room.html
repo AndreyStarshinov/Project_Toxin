@@ -1,0 +1,701 @@
+
+<section class="search-room"> 
+  <div class="search-room__container">
+    <div class="search-room__filter">
+      <div class="search-room__date"> 
+        <h3 class="search-room__date-heading">Даты пребывания в отеле</h3>
+        <div class="datepicker">
+          <div class="datepicker-start">
+            <input type="text" id="datepicker_3" placeholder="ДД.ММ.ГГГГ" autocomplete="off"/>
+          </div>
+        </div>
+      </div>
+      <div class="search-room__guests">
+        <label class="form-search__guests-label" for="guests">гости
+          <div class="dropdown">
+            <div class="dropdown-1__guests">
+              <input class="dropdown-1__input text_field" type="text" placeholder="Сколько гостей"/><span class="dropdown__input-arrow"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+</svg></span>
+            </div>
+            <div class="dropdown-1__modal"> 
+              <ul class="dropdown__list"> 
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left"> 
+                    <div class="dropdown__item-title">Взрослые</div>
+                  </div>
+                  <div class="dropdown__amount"> 
+                    <button class="dropdown-1__amount-minus" type="button">-</button><span class="dropdown-1__amount-number">0</span>
+                    <button class="dropdown-1__amount-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left"> 
+                    <div class="dropdown__item-title">Дети</div>
+                  </div>
+                  <div class="dropdown__amount"> 
+                    <button class="dropdown-1__amount-minus" type="button">-</button><span class="dropdown-1__amount-number">0</span>
+                    <button class="dropdown-1__amount-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left"> 
+                    <div class="dropdown__item-title">Младенцы</div>
+                  </div>
+                  <div class="dropdown__amount"> 
+                    <button class="dropdown-1__amount-minus" type="button">-</button><span class="dropdown-1__amount-number">0</span>
+                    <button class="dropdown-1__amount-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left">
+                    <button class="dropdown__clear" type="submit">Очистить</button>
+                  </div>
+                  <div class="dropdown__item-right">
+                    <button class="dropdown__apply" type="submit">Применить</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="search-room__price-range">
+        <div class="range-slider">
+          <p> 
+            <label for="amount">Диапазон цены</label>
+            <input class="range-slider__price" type="text" id="amount" readonly="readonly"/>
+          </p>
+          <div class="slider">
+            <div class="ui-slider-range ui-corner-all"></div><span class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0"> </span><span class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0"></span>
+          </div>
+        </div>
+        <p class="search-room__price-range_text">Стоимость за сутки пребывания в номере</p>
+      </div>
+      <div class="search-room__home-rules"> 
+        <h3 class="search-room__date-heading">Правила дома</h3>
+        <div class="search-room__home-rules_checkbox">
+          <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-1"/>
+          <label class="checkbox-buttons_text" for="checkbox-1">Можно курить</label>
+        </div>
+        <div class="search-room__home-rules_checkbox">
+          <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-2"/>
+          <label class="checkbox-buttons_text" for="checkbox-2">Можно с питомцами</label>
+        </div>
+        <div class="search-room__home-rules_checkbox">
+          <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-3"/>
+          <label class="checkbox-buttons_text" for="checkbox-3">Можно пригласить гостей (до 10 человек)</label>
+        </div>
+      </div>
+      <div class="search-room__availability"> 
+        <h3 class="search-room__date-heading">Доступность</h3>
+        <div class="search-room__availability_checkbox">
+          <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-4"/>
+          <label class="search-room__availability_checkbox_text" for="checkbox-4">Широкий коридор
+            <p>Ширина коридоров в номере не менее 91 см.</p>
+          </label>
+        </div>
+        <div class="search-room__availability_checkbox">
+          <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-5"/>
+          <label class="search-room__availability_checkbox_text" for="checkbox-5">Помощник для инвалидов
+            <p>На 1 этаже вас встретит специалист  и проводит до номера.</p>
+          </label>
+        </div>
+      </div>
+      <div class="search-room__facilities"> 
+        <label class="form-search__guests-label" for="guests">Удобства номера
+          <div class="dropdown">
+            <div class="dropdown-2__guests">
+              <input class="dropdown-2__input text_field" type="text" placeholder="2 спальни, 2 кровати..."/><span class="dropdown__input-arrow"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+</svg></span>
+            </div>
+            <div class="dropdown-2__modal"> 
+              <ul class="dropdown__list"> 
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left"> 
+                    <div class="dropdown__item-title">Спальни</div>
+                  </div>
+                  <div class="dropdown__amount"> 
+                    <button class="dropdown-2__amount-minus" type="button">-</button><span class="dropdown-2__amount-number">2</span>
+                    <button class="dropdown-2__amount-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left"> 
+                    <div class="dropdown__item-title">Кровати</div>
+                  </div>
+                  <div class="dropdown__amount"> 
+                    <button class="dropdown-2__amount-minus" type="button">-</button><span class="dropdown-2__amount-number">2</span>
+                    <button class="dropdown-2__amount-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left"> 
+                    <div class="dropdown__item-title">Ванные комнаты</div>
+                  </div>
+                  <div class="dropdown__amount"> 
+                    <button class="dropdown-2__amount-minus" type="button">-</button><span class="dropdown-2__amount-number">0</span>
+                    <button class="dropdown-2__amount-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="dropdown__item"> 
+                  <div class="dropdown__item-left">
+                    <button class="dropdown__clear" type="submit">Очистить</button>
+                  </div>
+                  <div class="dropdown__item-right">
+                    <button class="dropdown__apply" type="submit">Применить</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="search-room__facilities-add">
+        <div class="checkbox-list">
+          <div class="checkbox-list__dropdown">
+            <input class="checkbox-list-heading" type="text" placeholder="Дополнительные удобства"/><span class="checkbox-list-arrow"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+</svg></span>
+          </div>
+          <div class="checkbox-list__dropdown-modal">
+            <div class="checkbox-list__item">
+              <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-6"/>
+              <label class="checkbox-buttons_text" for="checkbox-6">Завтрак</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-7"/>
+              <label class="checkbox-buttons_text" for="checkbox-7">Письменный стол</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-8"/>
+              <label class="checkbox-buttons_text" for="checkbox-8">Стул для кормления</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-8"/>
+              <label class="checkbox-buttons_text" for="checkbox-8">Кроватка</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-8"/>
+              <label class="checkbox-buttons_text" for="checkbox-8">Телевизор</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input class="checkbox-buttons" type="checkbox" name="" id="checkbox-8"/>
+              <label class="checkbox-buttons_text" for="checkbox-8">Шампунь</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-room__numbers">
+      <h2>Номера, которые мы для вас подобрали</h2>
+      <ul class="search-room__numbers-list"> 
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="search-room__numbers-item"> 
+          <div class="number__container"> 
+            <ul class="number__list">
+              <li class="number__item">
+                <div class="block-slider">
+                  <div class="sliderwrapper">
+                    <div class="slides"> <img class="slide-img slide-img-1 slide-block" src="/src/img/image-number-1.png" alt="1"/><img class="slide-img slide-img-2" src="/src/img/image-number-2.png" alt="2"/><img class="slide-img slide-img-3" src="/src/img/image-number-3.png" alt="3"/><img class="slide-img slide-img-4" src="/src/img/image-number-4.png" alt="4"/></div>
+                    <div class="prev-next-btns"> 
+                      <div class="prev-btn"> </div>
+                      <div class="next-btn"> </div>
+                    </div>
+                    <ul class="slider-dots">
+                      <li class="slider-dots__nav slider-dots__nav-1"></li>
+                      <li class="slider-dots__nav slider-dots__nav-2"></li>
+                      <li class="slider-dots__nav slider-dots__nav-3"></li>
+                      <li class="slider-dots__nav slider-dots__nav-4"></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="number__item number__number-price">
+                <h2>№888
+                  <p class="number__lux">ЛЮКС</p>
+                </h2>
+                <p class="number__price"><b>9990Р</b> в сутки</p>
+              </li>
+              <li class="number__item number__number-rating">
+                <div class="rating-stars">
+                  <ul class="stars"> 
+                    <li class="star" data-value="1"><i class="fa fa-star fa-fw"> </i></li>
+                    <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                    <li class="stars-number"></li>
+                  </ul>
+                </div>
+                <p class="number__reviews"><b>145</b> Отзывов</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

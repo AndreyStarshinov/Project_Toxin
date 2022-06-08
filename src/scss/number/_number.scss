@@ -1,0 +1,45 @@
+.number__container {
+    background-color: #fff;
+}
+
+.number__item {
+    display: flex;
+    justify-content: space-between;
+    & h2 {
+        display: flex;
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    & .number__lux {
+        display: none;
+        margin: 0;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #BC9CFF;
+    }
+    & p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}
+
+.number__number-price, 
+.number__number-rating {
+    margin: 20px;
+}
+
+.number__number-price {
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.number__number-rating {
+    margin-top: 0;
+}

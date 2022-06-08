@@ -1,0 +1,28 @@
+.checkbox-buttons {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    cursor: pointer;
+}
+
+.checkbox-buttons:checked:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 7px;
+    margin-bottom: 0.1rem;
+    margin-left: 0.4rem;
+    border: solid #BC9CFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    
+}
+
+.checkbox-buttons:checked {
+  border-color:#BC9CFF;
+}
+

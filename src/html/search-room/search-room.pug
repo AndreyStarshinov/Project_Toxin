@@ -1,0 +1,65 @@
+section.search-room 
+    .search-room__container
+        .search-room__filter
+            .search-room__date 
+                h3.search-room__date-heading Даты пребывания в отеле
+                .datepicker
+                    .datepicker-start
+                        input(type="text" id="datepicker_3" placeholder="ДД.ММ.ГГГГ" autocomplete="off")
+            .search-room__guests
+                include ../dropdown/dropdown-1
+            .search-room__price-range
+                include ../range-slider/range-slider
+                p.search-room__price-range_text Стоимость за сутки пребывания в номере
+            .search-room__home-rules 
+                h3.search-room__date-heading Правила дома
+                .search-room__home-rules_checkbox
+                    input(type="checkbox", name="" id="checkbox-1").checkbox-buttons
+                    label(for="checkbox-1").checkbox-buttons_text Можно курить
+                .search-room__home-rules_checkbox
+                    input(type="checkbox", name="" id="checkbox-2").checkbox-buttons
+                    label(for="checkbox-2").checkbox-buttons_text Можно с питомцами
+                .search-room__home-rules_checkbox
+                    input(type="checkbox", name="" id="checkbox-3").checkbox-buttons
+                    label(for="checkbox-3").checkbox-buttons_text Можно пригласить гостей (до 10 человек)
+            .search-room__availability 
+                h3.search-room__date-heading Доступность
+                .search-room__availability_checkbox
+                    input(type="checkbox", name="", id="checkbox-4").checkbox-buttons
+                    label(for="checkbox-4").search-room__availability_checkbox_text Широкий коридор
+                        p Ширина коридоров в номере не менее 91 см.
+                .search-room__availability_checkbox
+                    input(type="checkbox", name="" id="checkbox-5").checkbox-buttons
+                    label(for="checkbox-5").search-room__availability_checkbox_text Помощник для инвалидов
+                        p На 1 этаже вас встретит специалист  и проводит до номера.
+            .search-room__facilities 
+                include ../dropdown/dropdown-2
+            .search-room__facilities-add
+                include ../checkbox-list/checkbox-list
+        .search-room__numbers
+            h2 Номера, которые мы для вас подобрали
+            ul.search-room__numbers-list 
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number
+                li.search-room__numbers-item 
+                    include ../number/number

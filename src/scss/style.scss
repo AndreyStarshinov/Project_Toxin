@@ -40,8 +40,17 @@ img {
 @import "form_search/form_search";
 @import "datepicker/datepicker";
 @import "dropdown/dropdown";
+@import "range-slider/range-slider";
+@import "checkbox-buttons/checkbox-buttons";
+@import "checkbox-list/checkbox-list";
+@import "rating/rating";
+@import "number/number";
+@import "number-slider/number-slider";
 @import "sign-in/sign-in";
 @import "reg/reg";
+
+// Block search-room
+@import "search-room/search-room";
 
 // Block Footer
 @import "footer/footer";

@@ -1,0 +1,76 @@
+.search-room {
+    background-color: rgba(248, 247, 247, 0.877);
+}
+
+.search-room__container {
+    display: flex;
+    margin-left: 140px;
+    max-height: 1157px;
+}
+
+.search-room__filter {
+    width: 30%;
+    margin-right: 60px;
+}
+
+.search-room__date-heading {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.search-room__price-range_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.search-room__home-rules_checkbox, 
+.search-room__availability_checkbox {
+    display: flex;
+    margin-bottom: 10px;
+}
+.checkbox-buttons_text {
+    max-width: 240px;
+    margin-left: 10px;
+    margin-top: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+
+.search-room__availability_checkbox_text {
+    max-width: 240px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    & p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}
+
+.checkbox-list-arrow-rotate {
+    transform: rotate(180deg);
+}
+
+.search-room__numbers {
+    width: 100%;
+}
+
+.search-room__numbers-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.search-room__numbers-item:not(:last-child) {
+    margin-right: 12px;
+}
